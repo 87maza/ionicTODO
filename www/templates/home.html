@@ -1,5 +1,93 @@
-<ion-view view-title="Martin's Bio">
+<ion-view view-title="Martin's Portfolio" ng-controller="SlideCtrl">
+    <ion-pane>
+    <ion-slide-box active-slide="activeSlide" pager-click="setSlide(index)" >
+    <ion-slide>
 	<ion-content class="padding">
-		<h6>HOMER SIMPSON</h6>
+		<h2>Tres-en-Raya!</h2>
+		<h4>(Spanish Tic-Tac-Toe)</h4>
+
+		<p> My very first web app built in 3 weeks, ole! <br>
+		Used Pivotal Tracker for user-story management</p>
+		<h5>Front End:</h5>
+		<ul>
+			<li>HTML+CSS</li>
+			<li>Vanilla JS (game-logic)</li>
+			<li>AngularJS (databinding, real-time)</li>
+		</ul> 
+		<h5>Back End:</h5>
+		<p>Firebase</p>
 	</ion-content>
+    </ion-slide>
+
+    <ion-slide>
+	<ion-content class="padding">
+		<h2>Salty Dog</h2>
+		<h4>(Surf Blog)</h4>
+
+		<p>First Rails App built for the waves<br>
+		Used Pivotal Tracker and Travis CI with RSPEC Testing</p>
+
+		<h5>Front End:</h5>
+		<ul>
+			<li>HTML/Bootstrap</li>
+			<li>Magicseaweed.com API to grab forecast data</li>
+			<li>Hand-Rolled User Login/Authentication</li>
+		</ul> 
+		<h5>Back End:</h5>
+		<p>PostgreSQL for user database, blog posts and comments</p>
+		<p>Ruby Gems Used: Figaro, Amazon Webservice, Paperclip</p>
+	</ion-content>
+    </ion-slide>
+
+    <ion-slide>
+	<ion-content class="padding">
+		<h2>Soup Du Jour</h2>
+
+		<p>Group Project with Mike Chu and Val Ngai! Used Github Issues/Pivotal Tracker for Agile Management.  14 different API keys! We used RSPEC for TDD and Travis CI.<br>
+		For the indecisive who would like a curated list of things to do for the day.</p>
+		<h5>Front End:</h5>
+		<ul>
+			<li>HTML/CSS Bootstrap</li>
+			<li>Isotope.js for tile movements</li>
+			<li>AJAX/jQuery for front-end API calls</li>
+		</ul> 
+		<h5>Back End:</h5>
+		<p>PostgreSQL user/preference database and caching API calls.<br>
+		Ruby Gems Used: Figaro, Yelp, Geocoder</p>
+
+	</ion-content>
+    </ion-slide>
+
+    <ion-slide>
+	<ion-content class="padding">
+		<h2>HackrFarm</h2>
+
+		<p>First MEAN Stack App built in 2 weeks! Used Travis CI and MochaJS. <br></p>
+		<h5>Front End:</h5>
+		<ul>
+			<li>HTML/CSS Bootstrap/Angular</li>
+		</ul> 
+		<h5>Back End:</h5>
+		<p>Mongo/Mongoose to store user data.  LinkedIn Oauth with PassportJS<br>Express Routing
+		</p>
+
+	</ion-content>
+    </ion-slide>
+
+        <ion-slide>
+	<ion-content class="padding">
+		<h2>Spike Apps</h2>
+		<h4>ReactJS App and Ionic App</h4>
+		<h5>React App built for Legacy.com as a code challenge! <br>
+		Built with React/Bootstrap/Node/Flux methodology</h5>
+		<h5> Ionic App built GA Meet and Greet! Built with Ionic/Angular/Bootstrap</h5>
+
+
+		
+
+	</ion-content>
+    </ion-slide>
+    </ion-slide-box>
+    </ion-pane>
+
 </ion-view>

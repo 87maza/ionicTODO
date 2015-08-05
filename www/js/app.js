@@ -76,6 +76,22 @@
     }; 
   });
 
+  app.controller('SlideCtrl', function($scope) {
+
+    // $scope.slides = [];
+    // for (var i = 1; i <=5; i++) {
+    //   $scope.slides.push({
+    //     title
+    //   })
+    // }
+
+    $scope.activeSlide = 0;
+    $scope.setSlide = function(index) {
+      $scope.activeSlide = index;
+    }
+
+
+  });
 
   app.run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
